@@ -1,0 +1,15 @@
+spring:
+  datasource: 
+    url: jdbc:mariadb://localhost:3307/root
+    username: root 
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        fomrat_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
